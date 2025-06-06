@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    margin: 3rem 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    background-color: black;
+}
+
+.content{
+    height: 2000px;  
+    padding: 1rem;
+}
+
+#scroll_top{
+    width: 4rem;
+    height: 2rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease 2s;
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+#scroll_top.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
