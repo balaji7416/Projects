@@ -104,6 +104,10 @@ async function getWeather_by_Location(){
 
         errorMess.classList.add("hidden");
         display.classList.remove("hidden");
+    },(err)=>{
+        display.classList.add("hidden");
+        errorMess.textContent=`Location Error : ${err.message}`;
+        errorMess.classList.remove("hidden");
     })
     }
     catch(err){
