@@ -45,3 +45,27 @@ document.querySelector(".GetButton").addEventListener("click",getWeather);
 window.addEventListener("keydown",(event)=>{
     if(event.key==="Enter") getWeather();
 });
+
+let mode = document.querySelector(".mode");
+mode.addEventListener("click",()=>{
+
+
+    if(mode.textContent=="🌙 Dark"){
+        document.body.classList.add("dark");
+        mode.textContent="🌞 Light"
+    }
+    else{
+        document.body.classList.remove("dark");
+        mode.textContent="🌙 Dark"
+    }
+
+    if(document.body.classList.contains("dark")){
+        document.querySelector(".container").style.backgroundColor="wheat";
+        document.querySelector("h1").style.color="#8B4513";
+    }
+    else{
+        document.querySelector(".container").style.backgroundColor="";
+        document.querySelector("h1").style.color="";
+    }
+    
+})
