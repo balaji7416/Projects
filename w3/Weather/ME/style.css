@@ -57,7 +57,6 @@ body{
 .GetButton{
     width: 30%;
     height: 2rem;
-    padding:  0 auto;
     text-align: center;
     border: none;
     border-radius: .4rem;
@@ -103,4 +102,27 @@ body{
 .dark{
     background-color: rgba(0, 0, 0, 0.881);
     color: white;
+}
+
+.geoLocation{
+    width: 30%;
+    height: 2rem;
+    text-align: center;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+    background-color: #00b4d8;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.geoLocation:hover{
+    background-color:#0096c7 ;
+}
+
+.buttonGroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
